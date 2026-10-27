@@ -1,0 +1,18 @@
+[package]
+name = "derekt-enclave"
+version = "0.1.0"
+edition = "2021"
+authors = ["Shreyan <shreyan010@gmail.com>"]
+description = "Verifiable embedded hardware security module and policy enforcer for AI agent wallets on Baochip-1x / RISC-V silicon"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/shreyan001/derekt-enclave"
+keywords = ["hardware-security", "riscv", "mpc", "ai-agents", "reram"]
+categories = ["cryptography", "embedded"]
+
+[dependencies]
+sha2 = "0.10.9"
+thiserror = "1.0.69"
+bytemuck = { version = "1.25.2", features = ["derive"] }
+
+[dev-dependencies]
+rand = "0.8.8"
